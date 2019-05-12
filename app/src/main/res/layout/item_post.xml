@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/rl_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:id="@+id/iv_user"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_launcher"
+                android:contentDescription="@string/user_profile"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/iv_user"
+                android:layout_centerVertical="true">
+            <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:text="@string/yesaya_r_athuman"
+                    android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                    android:id="@+id/tv_created_at"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="@string/_11_hrs"
+                    android:textColor="@color/grey"
+                    android:fontFamily="sans-serif"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_author"
+            android:textColor="@color/black"
+            android:text="@string/working_on_the_weather_app_design"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"/>
+
+    <ImageView
+            android:id="@+id/iv_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/vue"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/post_thumbnail"/>
+
+    <RelativeLayout
+            android:id="@+id/rl_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_thumbnail"
+            android:layout_marginTop="15dp">
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UseCompoundDrawables">
+            <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_like_light"
+                    tools:ignore="ContentDescription"/>
+
+            <TextView
+                    android:id="@+id/tv_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_18"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp"/>
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tv_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="@string/_5_comments"
+                android:layout_alignParentEnd="true"
+                tools:ignore="RelativeOverlap"/>
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_grey"
+            android:layout_below="@+id/rl_post"
+            android:layout_marginTop="10dp"
+            tools:ignore="ContentDescription"/>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mobile_navigation"
+        app:startDestination="@id/postFragment">
+
+    <fragment
+            android:name="com.yesayasoftware.learning.ui.posts.list.PostFragment"
+            android:label="Yesaya Software" tools:layout="@layout/post_fragment" android:id="@+id/postFragment"/>
+
+    <fragment android:id="@+id/postDetailFragment"
+              android:name="com.yesayasoftware.learning.ui.posts.detail.PostDetailFragment"
+              android:label="Details" tools:layout="@layout/post_detail_fragment"/>
+
+    <fragment android:id="@+id/podcastFragment"
+              android:name="com.yesayasoftware.learning.ui.podcasts.list.PodcastFragment"
+              android:label="Podcasts" tools:layout="@layout/podcast_fragment"/>
+
+    <fragment android:id="@+id/settingsFragment"
+              android:name="com.yesayasoftware.learning.ui.settings.SettingsFragment" android:label="Settings"/>
+</navigation>

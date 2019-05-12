@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/postFragment"
+            android:icon="@drawable/ic_today"
+            android:title="@string/posts"/>
+    <item
+            android:id="@+id/podcastFragment"
+            android:icon="@drawable/ic_calendar_week"
+            android:title="@string/podcasts"/>
+    <item
+            android:id="@+id/settingsFragment"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings"/>
+</menu>
